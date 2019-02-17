@@ -36,7 +36,7 @@ gulp.task("html", function () {
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
-    .pipe(gulp.dest("./dist"))
+    .pipe(gulp.dest("./"))
     .pipe(browserSync.stream());
 });
 
@@ -53,7 +53,7 @@ gulp.task("js", ['cache:js'], function () {
 gulp.task("server", function () {
   browserSync.init({
     server: {
-      baseDir: "./dist"
+      baseDir: "./"
     }
   });
 
