@@ -1,0 +1,15 @@
+.autop #autopin {
+  position: absolute;
+  z-index: 1000; }
+
+.autop ul {
+  background: white;
+  list-style-type: none;
+  padding: 0; }
+  .autop ul li {
+    margin-top: -1px;
+    padding: 5px 20px;
+    border: 1px solid #ddd; }
+    .autop ul li:hover {
+      background: #0af;
+      color: white; }

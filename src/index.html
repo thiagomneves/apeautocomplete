@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/ape.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2">
+        <form action="">
+          <div class="form-group">
+            <label for="search">Search</label>
+            <input class="form-control" type="text" id="source">
+          </div>
+
+          <div class="form-group">
+            <label for="id">id</label>
+            <input class="form-control" type="number" id="idDestination" readonly>
+          </div>
+
+          <div class="form-group">
+            <label for="email">email</label>
+            <input class="form-control" type="email" id="emailDestination" readonly>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/ape.js"></script>
+  <script>
+    const arrSource = [{
+        id: 1,
+        nome: 'Nur Burch',
+        email: 'burch@domain.com'
+      },
+      {
+        id: 2,
+        nome: 'Kaden Tate',
+        email: 'tate@domain.com'
+      },
+      {
+        id: 3,
+        nome: 'Ahmad Bates',
+        email: 'bates@domain.com'
+      },
+      {
+        id: 4,
+        nome: 'Ursula Smyth',
+        email: 'smith@domain.com'
+      },
+      {
+        id: 5,
+        nome: 'Maud Gaines',
+        email: 'gaines@domain.com'
+      },
+      {
+        id: 6,
+        nome: 'Marta Rutledge',
+        email: 'rutledge@domain.com'
+      },
+      {
+        id: 7,
+        nome: 'Boyd Duffy',
+        email: 'duffy@domain.com'
+      },
+      {
+        id: 8,
+        nome: 'Lilah Archer',
+        email: 'archer@domain.com'
+      },
+      {
+        id: 9,
+        nome: 'Megan Holloway',
+        email: 'holloway@domain.com'
+      },
+      {
+        id: 10,
+        nome: 'Patrycja Holloway',
+        email: 'holloway@domain.com'
+      }
+    ];
+
+    $('#source').aautocomplete(function () {
+      return arrSource; // you can get data from ajax 
+    }, {
+      display: ['nome', 'email'],
+      destination: {
+        id: 'idDestination', // object attribute: input's id
+        email: 'emailDestination'
+      }
+    });
+  </script>
+</body>
+
+</html>

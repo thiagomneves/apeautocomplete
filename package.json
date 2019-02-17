@@ -1,0 +1,26 @@
+{
+  "name": "apeautocomplete",
+  "version": "1.0.0",
+  "description": "Autocomplete lib to fill in other fields",
+  "main": "ape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Thiago Neves <thiagomn03@gmail.com> (https://thiagoneves.com.br/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify-es": "^1.0.4"
+  }
+}
