@@ -1,6 +1,8 @@
 # APE Autocomplete
 Autocomplete lib to fill in other fields
 
+http://thiagomneves.github.io/apeautocomplete
+
 ## Dependencies:
  - jQuery
 
